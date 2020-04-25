@@ -7,7 +7,8 @@ int main(){
     while(M>1){
         A*=--N;
         M--;
-        cout<<A<<endl;
     }
-    cout<<A<<endl;
+    for(int i=0;i<A;i++){
+        
+    }
 }

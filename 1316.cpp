@@ -1,28 +1,26 @@
-#include<iostream>
-#include<cstring>
-using namespace std;
+#include<stdio.h>
+#include<string.h>
 int main(){
-    int N,count=0;
-    cin>>N;
+    int N;
+    int alpha[26],sum=0;
+    scanf("%d",&N);
     for(int i=0;i<N;i++){
-        char arr[100],chr[100];
-        int k=0,bee;
-        cin>>arr;
-        bee=0;
-        for(int j=1;j<strlen(arr);j++){
-            if(arr[j-1]!=arr[j])
-                chr[k++]=arr[j-1];
-            else{
-                for(int a=0;a<k;a++){
-                    if(arr[j-1]==chr[a]){
-                        bee++;
-                        break;
-                    }
-                }
+        int boo=0;
+        for(int k=0;k<26;k++)
+            alpha[k]=0;
+        char arr[101];
+        scanf("%s",arr);
+        for(int j=0;j<strlen(arr);j++){
+            if(alpha[arr[j]-97]==0){
+                alpha[arr[j]-97]=1;
+            }
+            else if(alpha[arr[j]-97]!=0&&j!=0&&arr[j]!=arr[j-1]){
+                boo=1;
+                break;
             }
         }
-        if(bee==0)
-                count++;
+        if(boo==0)
+            sum++;
     }
-    cout<<count<<endl;
+    printf("%d\n",sum);
 }

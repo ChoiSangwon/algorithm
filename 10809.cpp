@@ -6,7 +6,6 @@ int main(){
     for(int i=0;i<26;i++)
         arr[i]=-1;
     for(int i=0;i<strlen(S);i++){
-        //printf("%d\n",S[i]-97);
         if(arr[S[i]-97]==-1)
             arr[S[i]-97]=i;
     }
