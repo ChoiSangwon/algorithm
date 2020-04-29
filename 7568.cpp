@@ -12,6 +12,6 @@ int main(){
             if(tall[i]<tall[j]&&weight[i]<weight[j])
                 aa++;
         }
-        cout<<aa+1<<" "<<endl;
+        cout<<aa+1<<" ";
     }
 }
