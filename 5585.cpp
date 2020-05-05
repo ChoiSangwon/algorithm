@@ -13,6 +13,8 @@ int main(){
     na-=50*(na/50);
     count+=na/10;
     na-=10*(na/10);
+    count+=na/5;
+    na-=5*(na/5);
     count+=na;
     cout<<count<<endl;
 }
