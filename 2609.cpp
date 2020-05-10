@@ -32,6 +32,4 @@ int main(){
         }
         printf("%d\n%d\n",i,j);
     }
-    
-    
 }
