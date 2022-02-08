@@ -17,5 +17,6 @@
         "locale": "cpp",
         "streambuf": "cpp",
         "algorithm": "cpp"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Enabled"
 }
