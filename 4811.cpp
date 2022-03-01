@@ -31,16 +31,16 @@ int main(){
                 dp[i][j]=dp[i-1][j];
             else{
                 dp[i][j]=max(dp[i-1][j-ar[i].first]+ar[i].second,dp[i-1][j]);
-                cout<<"a"<<endl;
+                //cout<<"a"<<endl;
             }
         }
     }
     
-    for(int i=0;i<=N;i++){
+    /*for(int i=0;i<=N;i++){
         for(int j=0;j<=K;j++)
             cout<<dp[i][j]<<" ";
         cout<<endl;
-    }
+    }*/
 
     cout<<dp[N][K]<<endl;
 }

@@ -15,8 +15,8 @@ int main(){
             min=count;
         else if(count<min)
             min=count;
-        if(min==0)
-            break;
+        //if(min==0)
+           // break;
     }
     cout<<min<<endl;
 }

@@ -13,9 +13,9 @@ int main(){
             if(arr[i]==driip[j])
                 count1++;
         }
+        if(count1==5)
+            cout<<"cute"<<endl;
+        else
+            cout<<"not cute"<<endl;
     }
-    if(count1==5)
-        cout<<"cute"<<endl;
-    else
-        cout<<"not cute"<<endl;
 }
