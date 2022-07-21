@@ -72,7 +72,9 @@
         "ratio": "cpp",
         "sstream": "cpp",
         "variant": "cpp",
-        "__functional_base": "cpp"
+        "__functional_base": "cpp",
+        "__tree": "cpp",
+        "map": "cpp"
     },
     "C_Cpp.errorSquiggles": "Enabled"
 }
