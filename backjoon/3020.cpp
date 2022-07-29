@@ -1,31 +1,29 @@
-#include<iostream>
+#include <iostream>
+#include <algorithm>
 using namespace std;
-int main(){
-    int N,H;
-    cin>>N>>H;
-    int length[H+1],sucksoon[N+1];
-    for(int i=1;i<H+1;i++)
-        length[i]=0;
-    int mina,count=0;
-    for(int i=1;i<N+1;i++){
-        cin>>sucksoon[i];
-        if(i%2==1){
-            for(int j=0;j<sucksoon[i];j++)
-                length[j]++;
-        }
-        else{
-            for(int j=H;j>=H-sucksoon[i];j--)
-                length[j]++;
-        }
-        if(i==N){
-            mina=length[1];
-            for(int i=1;i<H+1;i++)
-                mina=min(length[i],mina);
-        }
-    }
-    for(int i=1;i<H+1;i++){
-        if(mina==length[i])
-            count++;
-    }
-    cout<<mina<<" "<<count<<endl;
+int arr[100001] = { 0 };
+int arr2[100001] = { 0 };
+int N, H;
+int resmax = 200001, resindex = 0;
+
+int main() {
+	cin >> N >> H;
+	for (int i = 0; i < N/2; i++) 
+		cin >> arr[i] >> arr2[i];
+		
+	sort(arr, arr + (N / 2));
+	sort(arr2, arr2 + (N / 2));
+	for (int i = 1; i <= H; i++) {
+		int val = lower_bound(arr, arr + (N / 2), i ) -arr ;
+		val +=upper_bound(arr2,arr2 + (N / 2), H-i) -arr2 ;
+		val= N-val;
+		if (resmax == val)
+			resindex++;
+		else if (resmax > val) { 
+			resmax = val;
+			resindex = 1;
+		}
+	}
+	cout << resmax <<" " << resindex<< endl;
+
 }

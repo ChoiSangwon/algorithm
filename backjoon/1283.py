@@ -35,7 +35,7 @@ for i in range(N):
             word.append(i[0])
             printarr(arr,i[0],count)
             check=True
-            break;
+            break
         count+=1
     if(check):
         continue
@@ -45,7 +45,7 @@ for i in range(N):
             word.append(i)
             printarr(arr,i,count)
             check=True
-            break;
+            break
     if(check):
         continue
     printarr(arr,'0',-1)
