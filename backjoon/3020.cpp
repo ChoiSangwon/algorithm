@@ -14,8 +14,8 @@ int main() {
 	sort(arr, arr + (N / 2));
 	sort(arr2, arr2 + (N / 2));
 	for (int i = 1; i <= H; i++) {
-		int val = lower_bound(arr, arr + (N / 2), i ) -arr ;
-		val +=upper_bound(arr2,arr2 + (N / 2), H-i) -arr2 ;
+		int val = upper_bound(arr, arr + (N / 2), i ) -arr ;
+		val +=upper_bound(arr2,arr2 + (N / 2), H-i-1) -arr2 ;
 		val= N-val;
 		if (resmax == val)
 			resindex++;
