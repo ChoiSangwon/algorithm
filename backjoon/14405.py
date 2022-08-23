@@ -11,3 +11,23 @@ while i<len(arr):
         print("NO")
         exit()
 print("YES")
+
+# s = input()
+# cnt = 0
+# i = 0
+
+# while i < len(s):
+#     if s[i] == 'p' and i+1 < len(s) and s[i+1]=='i':
+#         i += 2
+#     elif s[i] == 'k' and i+1 < len(s) and s[i+1]=='a':
+#         i += 2
+#     elif s[i] == 'c' and i+2 < len(s) and s[i+1]=='h' and s[i+2]=='u':
+#         i += 3
+#     else:
+#         cnt = 1
+#         break
+
+# if cnt == 0:
+#     print('YES')
+# else:
+#     print('NO')
