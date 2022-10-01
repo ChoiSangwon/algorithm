@@ -23,6 +23,7 @@ for i in range(len(arr)):
     for j in range(arr[i],N+3,arr[i]):
         if(j not in rate):
             dp[j]=1
+print(dp)
 for i in range(1,N+3):
     dp[i]=dp[i-1]+dp[i]
 for i in range(M):
