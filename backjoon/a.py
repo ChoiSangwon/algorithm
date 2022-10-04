@@ -8,8 +8,7 @@ student = [1] * (n+3)
 
 for i in q:
     x = 1
-    if (i*x in k):
-        continue
+    
     while i*x < n+3:
         if i*x not in k:
             student[i*x] = 0
