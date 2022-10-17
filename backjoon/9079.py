@@ -8,7 +8,6 @@ def solve(res,count):
     if(res>tmp==0)
 
 
-
 def cmp(arr):
     for i in range(3):
         for j in range(3):
@@ -44,3 +43,4 @@ for i in range(N):
     print(ToInt(arr))
             
         
+
