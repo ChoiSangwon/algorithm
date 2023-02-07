@@ -4,7 +4,7 @@ cnt = int(input())
  
 if(sum(arr)<=cnt):
     print(max(arr))
-else: 
+else:   
     res=0
     start = 0
     end = max(arr)
