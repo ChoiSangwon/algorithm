@@ -1,7 +1,7 @@
 n= int(input())
 arr =list(map(int,input().split()))
 cnt = int(input())
-
+ 
 if(sum(arr)<=cnt):
     print(max(arr))
 else:
