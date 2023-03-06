@@ -8,3 +8,6 @@ def solution(n, s):
         for i in range(s%n):
             answer[-1-i]+=1
         return answer    
+
+
+ㅜ=
