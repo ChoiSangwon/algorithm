@@ -11,4 +11,4 @@ Q = int(input())
 
 for i in range(Q):
     a,b = map(int,sys.stdin.readline().split())
-    print(dp[b-1]-dp[a-1])
+    print(dp[b-1]-dp[a-1]) 
