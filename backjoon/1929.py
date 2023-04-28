@@ -5,6 +5,6 @@ def solve(a):
     return True
 
 N,M=map(int,input().split())
-for i in range(N,M+1):
+for i in range(max(N,2),M+1):
     if solve(i):
         print(i)
