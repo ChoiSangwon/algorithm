@@ -14,6 +14,4 @@ def solution(answers):
     for i in range(3):
         if(res==count[i]):
             answer.append(i+1)
-                
-            
     return answer
