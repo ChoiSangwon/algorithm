@@ -1,6 +1,5 @@
 N,M = map(int,input().split())
 arr = [i for i in range(1,N+1)]
-check=[0 for _ in range(N)]
 
 def dfs(cur,count,x):
     if count == M:
