@@ -3,7 +3,7 @@ check = [0 for _ in range(N)]
 arr = list(map(int,input().split()))
 arr.sort()
 
-def dfs(cur,count):
+def solve(cur,count):
     if count==M:
         cur = [str(i) for i in cur]
         print(str(" ").join(cur))
@@ -12,11 +12,8 @@ def dfs(cur,count):
             continue
         cur.append(arr[i])
         check[i]=1
-        dfs(cur,count+1)
+        solve(cur,count+1)
         check[i]=0
         cur.pop()
 
-for i in range(N):
-    check[i]=1
-    dfs([arr[i]],1)
-    check[i]=0
+solve([],0)

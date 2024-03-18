@@ -7,7 +7,7 @@ arr = list(map(int,input().split()))
 res=set([])
 arr.sort()
 
-def dfs(cur,count):
+def solve(cur,count):
     if count==M:
         res.add(tuple(cur))
     for i in range(N):
@@ -15,11 +15,11 @@ def dfs(cur,count):
             continue
         cur.append(arr[i])
         check[i]=1
-        dfs(cur,count+1)
+        solve(cur,count+1)
         check[i]=0
         cur.pop()
 
-dfs([],0)
+solve([],0)
 res=list(res)
 a=len(res[0])
 res.sort(key=lambda x : tuple(x[i] for i in range(a)))
