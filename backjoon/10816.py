@@ -3,7 +3,6 @@ arr=list(map(int,input().split()))
 m=int(input())
 find = list(map(int,input().split()))
 
-# arr.sort()
 res={}
 
 for i in arr:
@@ -17,18 +16,3 @@ for i in find:
         print(res[i],end=" ")
     else:
         print(0,end=" ")
-
-# for i in find:
-#     flag=False
-#     count=0
-#     for j in range(n):
-#         if i<arr[j]:
-#             break
-#         if arr[j]==i and flag==False:
-#             flag=True
-#             count+=1
-#         elif arr[j]==i and flag==True:
-#             count+=1
-#         elif arr[j]!=i and flag==True:
-#             break
-#     print(count,end=" ")
